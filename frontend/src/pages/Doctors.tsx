@@ -18,13 +18,11 @@ const Doctors = () => {
               </defs>
               <rect fill="url(#7b568941-9ed0-4f49-85a0-5e21ca6c7ad6)" width="52" height="24" />
             </svg>
-            <span className="relative">The</span>
+            <span className="relative">Meet Our Docs</span>
           </span>{" "}
-          quick, brown fox jumps over a lazy dog
         </h2>
         <p className="text-base text-gray-700 md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa
-          quae.
+          <b>Introducin to Well qualified and specialized docs team</b>
         </p>
       </div>
       <div className="grid gap-5 row-gap-5 mb-8 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
@@ -33,16 +31,19 @@ const Doctors = () => {
           className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
         >
           <div className="flex flex-col h-full">
-            <img
-              src="https://images.pexels.com/photos/3182750/pexels-photo-3182750.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              className="object-cover w-full h-48"
-              alt=""
-            />
+            <img src="public\images\doctor-1.jpg" className="object-cover w-full h-48" alt="" />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
-                <h6 className="mb-2 font-semibold leading-5">Skate ipsum dolor</h6>
-                <p className="text-sm text-gray-900">
-                  Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <h6 className="mb-2 font-semibold leading-5">Dr Pranit Goel</h6>
+                <p className="text-sm font-sans text-gray-900">
+                  <b>Cardiologist</b>
+                  <br></br>
+                  <br></br>
+                  Dr. Pranit Goel stands as a beacon of excellence in the field of cardiovascular medicine, boasting
+                  over 7 years of unwavering commitment to cardiac health. Renowned for his specialized expertise, Dr.
+                  Khan is dedicated to the diagnosis, management, and treatment of cardiovascular diseases with
+                  precision and compassion. His profound understanding of cardiac conditions, coupled with a
+                  patient-centric
                 </p>
               </div>
             </div>
@@ -53,16 +54,19 @@ const Doctors = () => {
           className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
         >
           <div className="flex flex-col h-full">
-            <img
-              src="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              className="object-cover w-full h-48"
-              alt=""
-            />
+            <img src="public\images\doctor-2.jpg" className="object-cover w-full h-48" alt="" />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
-                <h6 className="mb-2 font-semibold leading-5">They urge you</h6>
-                <p className="text-sm text-gray-900">
-                  A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear.
+                <h6 className="mb-2 font-semibold leading-5">Dr Neha Jaiswal</h6>
+                <p className="text-sm font-sans text-gray-900">
+                  {" "}
+                  <b>Paediatrician</b>
+                  <br></br>
+                  <br></br>Dr. Neha Jaiswal stands as a beacon of compassion and expertise in pediatric and adolescent
+                  medicine, committed to delivering exceptional care to the youngest members of our community. With a
+                  heartfelt dedication to the well-being of children and adolescents, Dr. Jaiswal combines her extensive
+                  medical knowledge with a nurturing approach, ensuring that each young patient receives the highest
+                  standard of care.
                 </p>
               </div>
             </div>
@@ -73,16 +77,19 @@ const Doctors = () => {
           className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
         >
           <div className="flex flex-col h-full">
-            <img
-              src="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-              className="object-cover w-full h-48"
-              alt=""
-            />
+            <img src="public\images\doctor-3.jpg" className="object-cover w-full h-48" alt="" />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
-                <h6 className="mb-2 font-semibold leading-5">The doctor said</h6>
-                <p className="text-sm text-gray-900">
-                  Sportacus andrew weatherall goose Refined gentlemen super mario des lynam alpha trion zap rowsdower.
+                <h6 className="mb-2 font-semibold leading-5">Dr Kartikey bhatnagar</h6>
+                <p className="text-sm text-gray-900 font-sans">
+                  <b>Sexologist</b>
+                  <br></br>
+                  <br></br>
+                  Dr. Kartikey is a renowned sexologist with over a decade of experience in the field of sexual health
+                  and education. Based in a bustling urban center, he has dedicated his career to promoting
+                  understanding and awareness of sexual wellness, addressing issues that often remain shrouded in
+                  stigma. His approach combines traditional medical practices with modern therapeutic techniques,
+                  allowing him to provide comprehensive care to his patients
                 </p>
               </div>
             </div>
@@ -93,16 +100,21 @@ const Doctors = () => {
           className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
         >
           <div className="flex flex-col h-full">
-            <img
-              src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              className="object-cover w-full h-48"
-              alt=""
-            />
+            <img src="public\images\doc-4.jpg" className="object-contain w-full h-48" alt="" />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
-                <h6 className="mb-2 font-semibold leading-5">They urge you</h6>
-                <p className="text-sm text-gray-900">
-                  A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear.
+                <h6 className="mb-2 font-semibold leading-5">Dr Dhruv krishna vaid</h6>
+                <p className="text-sm text-gray-900 font-sans">
+                  <b>General physicist</b>
+                  <br></br>
+                  <br></br>
+                  With a wealth of experience spanning over 25 years, Dr.krishna Dhruv vaid stands as a pillar of
+                  expertise and compassion in the field of general medicine. As a seasoned general physician, Dr. Go as
+                  dedicated her career to providing comprehensive healthcare to patients of all ages, offering a wide
+                  range of medical services and diagnostic expertise. Her deep-rooted commitment to patient well-being,
+                  coupled with her extensive experience, instilis confidence and trust among her patients and peers
+                  alike. Dr. Goel's compassionate approach and meticulous attention to detail ensure that each patient
+                  receives personalized care tailored to their unique needs.
                 </p>
               </div>
             </div>
