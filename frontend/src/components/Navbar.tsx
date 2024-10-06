@@ -29,31 +29,11 @@ const Navbar = () => {
           <li>
             <Link
               to="/"
-              aria-label="Our product"
-              title="Our product"
+              aria-label="Home"
+              title="Home"
               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
-              Product
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/"
-              aria-label="Our product"
-              title="Our product"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-            >
-              Features
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/"
-              aria-label="Product pricing"
-              title="Product pricing"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-            >
-              Pricing
+              Home
             </Link>
           </li>
           <li>
@@ -68,12 +48,42 @@ const Navbar = () => {
           </li>
           <li>
             <Link
+              to="/services"
+              aria-label="Services"
+              title="Services"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+            >
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/about"
               aria-label="About us"
               title="About us"
               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               About us
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              aria-label="Contact Us"
+              title="Contact Us"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+            >
+              Contact Us
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/learn-more"
+              aria-label="Learn More"
+              title="Learn More"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+            >
+              Learn More
             </Link>
           </li>
         </ul>
@@ -103,7 +113,7 @@ const Navbar = () => {
             </svg>
           </button>
           {isMenuOpen && (
-            <div className="absolute top-0 left-0 w-full">
+            <div className="absolute top-0 left-0 w-full text-center">
               <div className="p-5 bg-white border rounded shadow-sm">
                 <div className="flex items-center justify-between mb-4">
                   <div>
@@ -147,31 +157,21 @@ const Navbar = () => {
                     <li>
                       <Link
                         to="/"
-                        aria-label="Our product"
-                        title="Our product"
+                        aria-label="Home"
+                        title="Home"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
-                        Product
+                        Home
                       </Link>
                     </li>
                     <li>
                       <Link
-                        to="/"
-                        aria-label="Our product"
-                        title="Our product"
+                        to="/services"
+                        aria-label="Services"
+                        title="Services"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
-                        Features
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/"
-                        aria-label="Product pricing"
-                        title="Product pricing"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                      >
-                        Pricing
+                        Services
                       </Link>
                     </li>
                     <li>
@@ -192,6 +192,26 @@ const Navbar = () => {
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         About us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/contact"
+                        aria-label="Contact Us"
+                        title="Contact Us"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        Contact Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/learn-more"
+                        aria-label="Learn More"
+                        title="Learn More"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        Learn More
                       </Link>
                     </li>
                     <li>

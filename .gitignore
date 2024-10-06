@@ -29,7 +29,6 @@ dist-ssr
 **/.env
 
 # Python related files
-__pycache__/*
 .venv/*
 
 # Yarn Zero-Installs
