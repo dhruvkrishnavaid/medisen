@@ -8,35 +8,43 @@ const Home = () => {
           <div className="flex flex-col justify-center items-center w-full h-full">
             <div className="max-w-xl mb-6">
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                The quick, brown fox
+                “Symptoms Unveiled: <br></br>
                 <br className="hidden md:block" />
-                jumps over{" "}
+                AI Predicts Your Health”{" "}
                 <span className="relative px-1">
-                  <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />
-                  <span className="relative inline-block text-deep-purple-accent-400">a lazy dog</span>
+                  <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" /> <br></br>
+                  <br></br>
+                  <span className="relative inline-block text-deep-purple-accent-400">Medisen</span>
                 </span>
               </h2>
-              <p className="text-base text-gray-700 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem aperiam, eaque ipsa quae. explicabo.
+              <p className="text-base text-gray-700  font-semibold font-sans md:text-lg">
+                "Utilizing an advanced AI model that accurately predicts diseases based on symptoms, we aim to connect
+                patients virtually with the best doctors in the field. This innovative platform not only streamlines the
+                diagnostic process but also ensures that individuals receive timely and expert medical advice from the
+                comfort of their homes
               </p>
             </div>
           </div>
           <div>
             <img
-              className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-              src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+              className="object-contain w-full h-56 rounded shadow-lg sm:h-96"
+              src="public\images\Screenshot 2024-10-06 161838.png"
               alt=""
             />
           </div>
         </div>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <hr className="h-1 bg-deep-purple-100 mx-8 rounded-2xl" />
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <h5 className="mb-8 text-4xl font-extrabold leading-none md:pl-2">
-          The quick, brown fox
+          Problems To be solved <br></br>
           <br className="hidden md:block" />
-          jumps over <span className="inline-block text-deep-purple-accent-400">a lazy dog</span>
+          by our model <span className="inline-block text-deep-purple-accent-400">Medisen</span>
         </h5>
         <div className="grid gap-3 row-gap-3 lg:grid-cols-3">
           <ul className="space-y-3">
@@ -52,7 +60,7 @@ const Home = () => {
                   />
                 </svg>
               </span>
-              Sed ut perspiciatis unde omnis iste
+              Avoid Delayed treatment and get instant connect to Docs
             </li>
             <li className="flex items-start">
               <span className="mr-1">
@@ -66,7 +74,7 @@ const Home = () => {
                   />
                 </svg>
               </span>
-              I'll be sure to note that in my log
+              Prevent from misdiagnosis of an individual
             </li>
             <li className="flex items-start">
               <span className="mr-1">
@@ -80,51 +88,7 @@ const Home = () => {
                   />
                 </svg>
               </span>
-              Well, that's certainly good to know
-            </li>
-          </ul>
-          <ul className="space-y-3">
-            <li className="flex items-start">
-              <span className="mr-1">
-                <svg className="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-                  <polygon
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </span>
-              Leverage agile frameworks to provide
-            </li>
-            <li className="flex items-start">
-              <span className="mr-1">
-                <svg className="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-                  <polygon
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </span>
-              Dingy I'm tellin' you rhubaahb Bangah
-            </li>
-            <li className="flex items-start">
-              <span className="mr-1">
-                <svg className="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-                  <polygon
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </span>
-              That is the true genius of America
+              Provide access to consult with your doctors and easy to access to know about your disease
             </li>
           </ul>
           <ul className="space-y-3">
@@ -140,7 +104,7 @@ const Home = () => {
                   />
                 </svg>
               </span>
-              We meet at one of those defining
+              Vanishes the long time waits for appointments
             </li>
             <li className="flex items-start">
               <span className="mr-1">
@@ -154,7 +118,7 @@ const Home = () => {
                   />
                 </svg>
               </span>
-              We did not go by choice, we went
+              24 hour support
             </li>
             <li className="flex items-start">
               <span className="mr-1">
@@ -168,7 +132,51 @@ const Home = () => {
                   />
                 </svg>
               </span>
-              Those options are already baked in
+              Decrease the cost of healthcare
+            </li>
+          </ul>
+          <ul className="space-y-3">
+            <li className="flex items-start">
+              <span className="mr-1">
+                <svg className="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                  <polygon
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    fill="none"
+                    points="29 13 14 29 25 29 23 39 38 23 27 23"
+                  />
+                </svg>
+              </span>
+              Unleashing the feature of pre-appointments scheduling , for more convenience
+            </li>
+            <li className="flex items-start">
+              <span className="mr-1">
+                <svg className="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                  <polygon
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    fill="none"
+                    points="29 13 14 29 25 29 23 39 38 23 27 23"
+                  />
+                </svg>
+              </span>
+              Privacy and security of health information
+            </li>
+            <li className="flex items-start">
+              <span className="mr-1">
+                <svg className="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                  <polygon
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    fill="none"
+                    points="29 13 14 29 25 29 23 39 38 23 27 23"
+                  />
+                </svg>
+              </span>
+              Medicare-support by specialized docs
             </li>
           </ul>
         </div>
@@ -194,10 +202,11 @@ const Home = () => {
                     />
                   </svg>
                 </div>
-                <h6 className="font-semibold leading-5">The quick, brown fox</h6>
+                <h6 className="font-semibold leading-5 text-1xl">Health services</h6>
               </div>
-              <p className="mb-2 text-sm text-gray-900">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam.
+              <p className="mb-2 text-sm  text-gray-900 font-sans">
+                empowering communities with comprehensive health services and wellness programs tailored to their unique
+                needs
               </p>
               <Link
                 to="/"
@@ -226,10 +235,10 @@ const Home = () => {
                     />
                   </svg>
                 </div>
-                <h6 className="font-semibold leading-5">Smooth as an android</h6>
+                <h6 className="font-semibold leading-5">Easy appointments</h6>
               </div>
               <p className="mb-2 text-sm text-gray-900">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam.
+                Seamless appointments scheduling for your convenience , ensuring easy access to healthcare services
               </p>
               <Link
                 to="/"
@@ -258,10 +267,11 @@ const Home = () => {
                     />
                   </svg>
                 </div>
-                <h6 className="font-semibold leading-5">This is about justice</h6>
+                <h6 className="font-semibold leading-5">Qualified Docs</h6>
               </div>
               <p className="mb-2 text-sm text-gray-900">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam.
+                Connect with experienced and qualified doctors for personalized healthcare solutions tailored to your
+                needs
               </p>
               <Link
                 to="/"
