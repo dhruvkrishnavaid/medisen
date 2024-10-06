@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 bg-white z-20 shadow-lg rounded-b-lg px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div className="sticky top-0 bg-white z-20 shadow-lg rounded-b-lg px-4 py-5 mx-auto md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="relative flex items-center justify-between">
         <Link to="/" aria-label="Company" title="Company" className="inline-flex items-center">
           <svg
@@ -90,12 +90,12 @@ const Navbar = () => {
         <ul className="items-center hidden space-x-8 lg:flex">
           <li>
             <Link
-              to="/"
+              to="/diagnose"
               className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-              aria-label="Sign up"
-              title="Sign up"
+              aria-label="Diagnose Now"
+              title="Diagnose Now"
             >
-              Sign up
+              Diagnose Now
             </Link>
           </li>
         </ul>
@@ -216,12 +216,12 @@ const Navbar = () => {
                     </li>
                     <li>
                       <Link
-                        to="/"
+                        to="/diagnose"
                         className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                        aria-label="Sign up"
-                        title="Sign up"
+                        aria-label="Diagnose Now"
+                        title="Diagnose Now"
                       >
-                        Sign up
+                        Diagnose Now
                       </Link>
                     </li>
                   </ul>

@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import LearnMore from "./pages/LearnMore";
 import NotFound from "./pages/NotFound";
 import Services from "./pages/Services";
+import Diagnose from "./pages/Diagnose";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: "/learn-more",
     element: <App page={<LearnMore />} />,
+  },
+  {
+    path: "/diagnose",
+    element: <App page={<Diagnose />} />,
   },
 ]);
 

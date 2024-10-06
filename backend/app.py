@@ -5,11 +5,13 @@ import numpy as np
 import pandas as pd
 from dotenv import load_dotenv
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 
 load_dotenv()
 
 app = Flask("medisen")
 app.config["SECRET_KEY"] = getenv("SECRET_KEY")
+CORS(app)
 
 desc = pd.read_csv("Description.csv")
 
@@ -73,12 +75,13 @@ def prediction(arr):
 
 @app.route("/results", methods=["POST", "GET"])
 def predicted_value():
-    symptom1: str = request.form.get("symptom1", "")
-    symptom2: str = request.form.get("symptom2", "")
-    symptom3: str = request.form.get("symptom3", "")
-    symptom4: str = request.form.get("symptom4", "")
-    symptom5: str = request.form.get("symptom5", "")
+    symptom1: str = request.json["symptom1"]
+    symptom2: str = request.json["symptom2"]
+    symptom3: str = request.json["symptom3"]
+    symptom4: str = request.json["symptom4"]
+    symptom5: str = request.json["symptom5"]
     arr = np.array([symptom1, symptom2, symptom3, symptom4, symptom5])
+    print(arr)
     pred = prediction(arr)
     print(pred)
     data = {
