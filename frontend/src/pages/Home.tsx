@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <>
@@ -197,13 +199,13 @@ const Home = () => {
               <p className="mb-2 text-sm text-gray-900">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam.
               </p>
-              <a
-                href="/"
+              <Link
+                to="/"
                 aria-label=""
                 className="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
@@ -229,13 +231,13 @@ const Home = () => {
               <p className="mb-2 text-sm text-gray-900">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam.
               </p>
-              <a
-                href="/"
+              <Link
+                to="/"
                 aria-label=""
                 className="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
@@ -261,13 +263,13 @@ const Home = () => {
               <p className="mb-2 text-sm text-gray-900">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam.
               </p>
-              <a
-                href="/"
+              <Link
+                to="/"
                 aria-label=""
                 className="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
         </div>
