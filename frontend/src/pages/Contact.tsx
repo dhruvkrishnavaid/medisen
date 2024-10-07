@@ -127,7 +127,7 @@ const Contact = () => {
       </div>
       <div className="text-center pb-16">
         <Link
-          to="https://github.com/dhruvkrishnavaid/medisen"
+          to="https://github.com/dhruvkrishnavaid/Medisen"
           rel="noopener noreferrer"
           target="_blank"
           aria-label="⭐ Star us on GitHub"

@@ -18,11 +18,11 @@ const Doctors = () => {
               </defs>
               <rect fill="url(#7b568941-9ed0-4f49-85a0-5e21ca6c7ad6)" width="52" height="24" />
             </svg>
-            <span className="relative">Meet Our Docs</span>
+            <span className="relative">Meet Our Doctors</span>
           </span>{" "}
         </h2>
         <p className="text-base text-gray-700 md:text-lg">
-          <b>Introducin to Well qualified and specialized docs team</b>
+          <b>Introducing a well qualified and specialized team of doctors</b>
         </p>
       </div>
       <div className="grid gap-5 row-gap-5 mb-8 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
@@ -31,7 +31,7 @@ const Doctors = () => {
           className="inline-block overflow-hidden duration-300 transform bg-white rounded-lg shadow-sm hover:-translate-y-2"
         >
           <div className="flex flex-col h-full">
-            <img src="public\images\doctor-1.jpg" className="object-cover w-full h-48" alt="" />
+            <img src="images/doctor-1.jpg" className="object-cover w-full h-48" alt="" />
             <div className="flex-grow border border-t-0 rounded-b-lg">
               <div className="p-5">
                 <h6 className="mb-2 font-semibold leading-5">Dr Pranit Goel</h6>
@@ -54,7 +54,7 @@ const Doctors = () => {
           className="inline-block overflow-hidden duration-300 transform bg-white rounded-lg shadow-sm hover:-translate-y-2"
         >
           <div className="flex flex-col h-full">
-            <img src="public\images\doctor-2.jpg" className="object-cover w-full h-48" alt="" />
+            <img src="images/doctor-2.jpg" className="object-cover w-full h-48" alt="" />
             <div className="flex-grow border border-t-0 rounded-b-lg">
               <div className="p-5">
                 <h6 className="mb-2 font-semibold leading-5">Dr Neha Jaiswal</h6>
@@ -77,7 +77,7 @@ const Doctors = () => {
           className="inline-block overflow-hidden duration-300 transform bg-white rounded-lg shadow-sm hover:-translate-y-2"
         >
           <div className="flex flex-col h-full">
-            <img src="public\images\doctor-3.jpg" className="object-cover w-full h-48" alt="" />
+            <img src="images/doctor-3.jpg" className="object-cover w-full h-48" alt="" />
             <div className="flex-grow border border-t-0 rounded-b-lg">
               <div className="p-5">
                 <h6 className="mb-2 font-semibold leading-5">Dr Kartikey bhatnagar</h6>
@@ -100,7 +100,7 @@ const Doctors = () => {
           className="inline-block overflow-hidden duration-300 transform bg-white rounded-lg shadow-sm hover:-translate-y-2"
         >
           <div className="flex flex-col h-full">
-            <img src="public\images\doc-4.jpg" className="object-contain w-full h-48" alt="" />
+            <img src="images/doctor-4.jpg" className="object-cover w-full h-48" alt="" />
             <div className="flex-grow border border-t-0 rounded-b-lg">
               <div className="p-5">
                 <h6 className="mb-2 font-semibold leading-5">Dr Dhruv krishna vaid</h6>

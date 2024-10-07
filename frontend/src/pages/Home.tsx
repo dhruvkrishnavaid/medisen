@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className="px-4 py-16 h-screen mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="flex flex-col justify-center items-center px-4 py-16 h-screen mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-gray-50">
         <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
           <div className="flex flex-col justify-center items-center w-full h-full">
             <div className="max-w-xl mb-6">
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                 Meet your all new AI Health Companion -
-                  <span className="relative pl-2 inline-block text-deep-purple-accent-400">Medisen</span>.
+                <span className="relative pl-2 inline-block text-deep-purple-accent-400">Medisen</span>.
               </h2>
               <p className="text-base text-gray-700  font-semibold font-sans md:text-lg">
                 Utilizing an advanced AI model that accurately predicts diseases based on symptoms, we aim to connect
@@ -20,11 +20,7 @@ const Home = () => {
             </div>
           </div>
           <Link to="/diagnose">
-            <img
-              className="object-contain w-fit h-fit rounded-lg-lg shadow-lg"
-              src="images\banner.png"
-              alt=""
-            />
+            <img className="object-contain w-fit h-fit max-h-64 rounded-lg shadow-lg" src="images/banner.png" alt="" />
           </Link>
         </div>
       </div>

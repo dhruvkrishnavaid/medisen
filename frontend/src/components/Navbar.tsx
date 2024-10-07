@@ -1,13 +1,14 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const a = useLocation();
+  const isActive = (path: string) => a.pathname === path;
   return (
     <div className="sticky top-0 bg-white z-20 shadow-lg rounded-b-lg px-4 py-5 mx-auto md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="relative flex items-center justify-between">
-        <Link to="/" aria-label="Company" title="Company" className="inline-flex items-center">
+        <Link to="/" aria-label="Medisen" title="Medisen" className="inline-flex items-center">
           <svg
             className="w-8 text-deep-purple-accent-400"
             viewBox="0 0 24 24"
@@ -23,7 +24,7 @@ const Navbar = () => {
             <rect x="14" y="1" width="7" height="6" />
             <rect x="14" y="11" width="7" height="12" />
           </svg>
-          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Company</span>
+          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Medisen</span>
         </Link>
         <ul className="items-center hidden space-x-8 lg:flex">
           <li>
@@ -31,7 +32,7 @@ const Navbar = () => {
               to="/"
               aria-label="Home"
               title="Home"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className={`font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 ${isActive("/") ? "text-deep-purple-accent-400" : "text-gray-700"}`}
             >
               Home
             </Link>
@@ -41,7 +42,7 @@ const Navbar = () => {
               to="/doctors"
               aria-label="Doctors"
               title="Doctors"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className={`font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 ${isActive("/doctors") ? "text-deep-purple-accent-400" : "text-gray-700"}`}
             >
               Doctors
             </Link>
@@ -51,7 +52,7 @@ const Navbar = () => {
               to="/services"
               aria-label="Services"
               title="Services"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className={`font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 ${isActive("/services") ? "text-deep-purple-accent-400" : "text-gray-700"}`}
             >
               Services
             </Link>
@@ -61,7 +62,7 @@ const Navbar = () => {
               to="/about"
               aria-label="About us"
               title="About us"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className={`font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 ${isActive("/about") ? "text-deep-purple-accent-400" : "text-gray-700"}`}
             >
               About us
             </Link>
@@ -71,7 +72,7 @@ const Navbar = () => {
               to="/contact"
               aria-label="Contact Us"
               title="Contact Us"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className={`font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 ${isActive("/contact") ? "text-deep-purple-accent-400" : "text-gray-700"}`}
             >
               Contact Us
             </Link>
@@ -81,7 +82,7 @@ const Navbar = () => {
               to="/learn-more"
               aria-label="Learn More"
               title="Learn More"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className={`font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 ${isActive("/learn-more") ? "text-deep-purple-accent-400" : "text-gray-700"}`}
             >
               Learn More
             </Link>
@@ -91,7 +92,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/diagnose"
-              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded-lg shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded-lg shadow-lg bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
               aria-label="Diagnose Now"
               title="Diagnose Now"
             >
@@ -104,7 +105,7 @@ const Navbar = () => {
             aria-label="Open Menu"
             title="Open Menu"
             className="p-2 -mr-1 transition duration-200 rounded-lg focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
-            onClick={() => setIsMenuOpen(true)}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
               <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z" />
@@ -117,7 +118,13 @@ const Navbar = () => {
               <div className="p-5 bg-white border rounded-lg shadow-lg">
                 <div className="flex items-center justify-between mb-4">
                   <div>
-                    <Link to="/" aria-label="Company" title="Company" className="inline-flex items-center">
+                    <Link
+                      to="/"
+                      onClick={() => setIsMenuOpen(!isMenuOpen)}
+                      aria-label="Medisen"
+                      title="Medisen"
+                      className="inline-flex items-center"
+                    >
                       <svg
                         className="w-8 text-deep-purple-accent-400"
                         viewBox="0 0 24 24"
@@ -133,7 +140,7 @@ const Navbar = () => {
                         <rect x="14" y="1" width="7" height="6" />
                         <rect x="14" y="11" width="7" height="12" />
                       </svg>
-                      <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Company</span>
+                      <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Medisen</span>
                     </Link>
                   </div>
                   <div>
@@ -141,7 +148,7 @@ const Navbar = () => {
                       aria-label="Close Menu"
                       title="Close Menu"
                       className="p-2 -mt-2 -mr-2 transition duration-200 rounded-lg hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                      onClick={() => setIsMenuOpen(false)}
+                      onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
                       <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
                         <path
@@ -157,9 +164,10 @@ const Navbar = () => {
                     <li>
                       <Link
                         to="/"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
                         aria-label="Home"
                         title="Home"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className={`font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 ${isActive("/") ? "text-deep-purple-accent-400" : "text-gray-700"}`}
                       >
                         Home
                       </Link>
@@ -167,9 +175,10 @@ const Navbar = () => {
                     <li>
                       <Link
                         to="/services"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
                         aria-label="Services"
                         title="Services"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className={`font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 ${isActive("/services") ? "text-deep-purple-accent-400" : "text-gray-700"}`}
                       >
                         Services
                       </Link>
@@ -177,9 +186,10 @@ const Navbar = () => {
                     <li>
                       <Link
                         to="/doctors"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
                         aria-label="Doctors"
                         title="Doctors"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className={`font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 ${isActive("/doctors") ? "text-deep-purple-accent-400" : "text-gray-700"}`}
                       >
                         Doctors
                       </Link>
@@ -187,9 +197,10 @@ const Navbar = () => {
                     <li>
                       <Link
                         to="/about"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
                         aria-label="About us"
                         title="About us"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className={`font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 ${isActive("/about") ? "text-deep-purple-accent-400" : "text-gray-700"}`}
                       >
                         About us
                       </Link>
@@ -197,9 +208,10 @@ const Navbar = () => {
                     <li>
                       <Link
                         to="/contact"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
                         aria-label="Contact Us"
                         title="Contact Us"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className={`font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 ${isActive("/services") ? "text-deep-purple-accent-400" : "text-gray-700"}`}
                       >
                         Contact Us
                       </Link>
@@ -207,9 +219,10 @@ const Navbar = () => {
                     <li>
                       <Link
                         to="/learn-more"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
                         aria-label="Learn More"
                         title="Learn More"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className={`font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 ${isActive("/learn-more") ? "text-deep-purple-accent-400" : "text-gray-700"}`}
                       >
                         Learn More
                       </Link>
@@ -217,6 +230,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         to="/diagnose"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
                         className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded-lg shadow-lg bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                         aria-label="Diagnose Now"
                         title="Diagnose Now"
