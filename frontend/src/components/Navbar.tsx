@@ -211,7 +211,7 @@ const Navbar = () => {
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         aria-label="Contact Us"
                         title="Contact Us"
-                        className={`font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 ${isActive("/services") ? "text-deep-purple-accent-400" : "text-gray-700"}`}
+                        className={`font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 ${isActive("/contact") ? "text-deep-purple-accent-400" : "text-gray-700"}`}
                       >
                         Contact Us
                       </Link>

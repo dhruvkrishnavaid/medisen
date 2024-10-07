@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Diagnose = () => {
   const initialFormData = { symptom1: "", symptom2: "", symptom3: "", symptom4: "", symptom5: "" };
@@ -400,6 +401,14 @@ const Diagnose = () => {
               </div>
             </div>
           </div>
+          <Link
+            to="/appointment"
+            className="mb-4 text-gray-900 bg-light-green-accent-400 hover:bg-light-green-accent-700 focus:outline-none font-medium rounded-lg shadow-lg text-sm w-full px-5 py-2.5 max-w-2xl text-center"
+            aria-label="Book an Appointment"
+            title="Book an Appointment"
+          >
+            Book an Appointment
+          </Link>
           <button
             onClick={() => setResponse(null)}
             className="text-white bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:outline-none font-medium rounded-lg shadow-lg text-sm w-full px-5 py-2.5 max-w-2xl text-center"

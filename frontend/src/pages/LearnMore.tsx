@@ -1,15 +1,11 @@
 const LearnMore = () => {
   return (
     <>
-      <h1 className="text-4xl font-bold text-center mt-16">About Us</h1>
+      <h1 className="text-4xl font-bold text-center mt-16">Learn More</h1>
       <div className="grid grid-cols-1 gap-8 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded-lg shadow-sm lg:flex-row sm:mx-auto">
           <div className="relative lg:w-1/2">
-            <img
-              src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt=""
-              className="object-cover w-full lg:absolute h-80 lg:h-full"
-            />
+            <img src="images/topic1.jpg" alt="" className="object-cover w-full lg:absolute h-80 lg:h-full" />
             <svg
               className="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
               viewBox="0 0 20 104"
@@ -24,21 +20,14 @@ const LearnMore = () => {
                 Brand new
               </p>
             </div>
-            <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">Your new ideal style</h5>
+            <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">Understanding Chronic Diseases</h5>
             <p className="mb-5 text-gray-800">
-              <span className="font-bold">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit. Etiam sem
-              neque, molestie sit amet venenatis et, dignissim ut erat. Sed aliquet velit id dui eleifend, sed consequat
-              odio sollicitudin.
+              <span className="font-bold">Explore</span> the causes, symptoms, and management of chronic diseases for a
+              healthier life.
             </p>
             <div className="flex items-center">
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded-lg shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-              >
-                Get started
-              </button>
               <a
-                href="/"
+                href="#"
                 aria-label=""
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
@@ -52,11 +41,7 @@ const LearnMore = () => {
         </div>
         <div className="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded-lg shadow-sm lg:flex-row sm:mx-auto">
           <div className="relative lg:w-1/2">
-            <img
-              src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt=""
-              className="object-cover w-full lg:absolute h-80 lg:h-full"
-            />
+            <img src="images/topic2.png" alt="" className="object-cover w-full lg:absolute h-80 lg:h-full" />
             <svg
               className="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
               viewBox="0 0 20 104"
@@ -71,21 +56,14 @@ const LearnMore = () => {
                 Brand new
               </p>
             </div>
-            <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">Your new ideal style</h5>
+            <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">Wellness and Nutrition</h5>
             <p className="mb-5 text-gray-800">
-              <span className="font-bold">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit. Etiam sem
-              neque, molestie sit amet venenatis et, dignissim ut erat. Sed aliquet velit id dui eleifend, sed consequat
-              odio sollicitudin.
+              <span className="font-bold">Discover</span> the importance of nutrition and wellness practices for overall
+              wellbeing.
             </p>
             <div className="flex items-center">
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded-lg shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-              >
-                Get started
-              </button>
               <a
-                href="/"
+                href="#"
                 aria-label=""
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
@@ -99,11 +77,7 @@ const LearnMore = () => {
         </div>
         <div className="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded-lg shadow-sm lg:flex-row sm:mx-auto">
           <div className="relative lg:w-1/2">
-            <img
-              src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt=""
-              className="object-cover w-full lg:absolute h-80 lg:h-full"
-            />
+            <img src="images/topic3.jpg" alt="" className="object-cover w-full lg:absolute h-80 lg:h-full" />
             <svg
               className="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
               viewBox="0 0 20 104"
@@ -118,21 +92,14 @@ const LearnMore = () => {
                 Brand new
               </p>
             </div>
-            <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">Your new ideal style</h5>
+            <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">Mental Health Awareness</h5>
             <p className="mb-5 text-gray-800">
-              <span className="font-bold">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit. Etiam sem
-              neque, molestie sit amet venenatis et, dignissim ut erat. Sed aliquet velit id dui eleifend, sed consequat
-              odio sollicitudin.
+              <span className="font-bold">Learn</span> about mental health conditions, coping strategies, and the
+              importance of seeking help.
             </p>
             <div className="flex items-center">
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded-lg shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-              >
-                Get started
-              </button>
               <a
-                href="/"
+                href="#"
                 aria-label=""
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >

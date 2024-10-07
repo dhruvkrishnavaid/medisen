@@ -26,9 +26,10 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <p className="mb-2 font-bold">Football Sports</p>
+              <p className="mb-2 font-bold">Primary Healthcare Services</p>
               <p className="text-sm leading-5 text-gray-900">
-                Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Our team helps you with regular health checkups and treatments for you and your family. We.re here to
+                keep you happy, healthy and safe.
               </p>
             </div>
             <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
@@ -46,9 +47,10 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <p className="mb-2 font-bold">Bowling Sports</p>
+              <p className="mb-2 font-bold">Learning About Health</p>
               <p className="text-sm leading-5 text-gray-900">
-                Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.
+                Come, join our classes to learn the art of staying and living a healthy life. We talk about eating well,
+                staying calm, and how to deal with being sick.
               </p>
             </div>
             <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
@@ -66,9 +68,9 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <p className="mb-2 font-bold">Cycling Sports</p>
+              <p className="mb-2 font-bold">Special Treatments</p>
               <p className="text-sm leading-5 text-gray-900">
-                A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker.
+                Advanced treaments and procedures delivered by experienced specialists.
               </p>
             </div>
             <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
@@ -86,9 +88,10 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <p className="mb-2 font-bold">Weight Lifting Sports</p>
+              <p className="mb-2 font-bold">Predicting Health Issues</p>
               <p className="text-sm leading-5 text-gray-900">
-                Meanwhile, in behind the bicycle shed, Hercules Morse, as big as a horse.
+                We use AI to guess if you might get sick in the near future. Then, we give you tips to stay healthy and
+                avoid getting sick.
               </p>
             </div>
             <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
@@ -106,9 +109,10 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <p className="mb-2 font-bold">Golf Sports</p>
+              <p className="mb-2 font-bold">Finding Out What's Wrong</p>
               <p className="text-sm leading-5 text-gray-900">
-                Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.
+                Our hogh-tech machines help find out what's wrong with your health, quickly and accurately. That way, we
+                can start fixing the problem sooner.
               </p>
             </div>
             <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
@@ -126,9 +130,10 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <p className="mb-2 font-bold">Hockey Sports</p>
+              <p className="mb-2 font-bold">Health Camps</p>
               <p className="text-sm leading-5 text-gray-900">
-                A business big enough that it could be listed on the NASDAQ goes belly up.
+                We organise health camps near your home, where you can get free checkups, medicines, and advice from
+                doctors. We care about your health, and we want to make it easy for you to stay healthy.
               </p>
             </div>
             <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
@@ -146,10 +151,11 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <p className="mb-2 font-bold">Shooting Sports</p>
+              <p className="mb-2 font-bold">Female Health Awareness Drives</p>
               <p className="text-sm leading-5 text-gray-900">
-                Lookout flogging bilge rat main sheet bilge water nipper fluke to go on account heave down clap of
-                thunder.
+                We hold special programmes just for ladies to learn about their helath. We talk about important topics
+                like pregnancy, childbirth, staying safe, and taking care oftheir bodies. These programmes are fun and
+                informative, and they help women feel confident and healthy.
               </p>
             </div>
             <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
@@ -167,9 +173,10 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <p className="mb-2 font-bold">Martial Arts</p>
+              <p className="mb-2 font-bold">Personalised Health Plans</p>
               <p className="text-sm leading-5 text-gray-900">
-                Webtwo ipsum orkut reddit meebo skype vimeo jajah spock empressr zimbra, mobly napster.
+                Our team creates personalised health plans just for you. We look at your lifestyle, health goals, and
+                any health problems that you may have, and we come up with a plan to help you feel your best.
               </p>
             </div>
             <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
