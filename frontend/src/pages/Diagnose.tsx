@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Diagnose = () => {
   const initialFormData = { symptom1: "", symptom2: "", symptom3: "", symptom4: "", symptom5: "" };
@@ -376,20 +377,20 @@ const Diagnose = () => {
           <div className="pb-8 text-4xl font-bold w-full text-center">Your Report</div>
           <div className="grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-3 sm:grid-cols-2">
             <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
-              <div className="h-full flex items-center p-5 border border-l-0 rounded-r shadow-sm">
+              <div className="h-full flex items-center p-5 border border-l-0 rounded-r-lg shadow-sm">
                 <h6 className="mb-2 font-semibold leading-5">
                   Our AI doctor diagnosed you with <h1 className="text-2xl font-bold">{response.prediction}</h1>
                 </h6>
               </div>
             </div>
             <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
-              <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
+              <div className="h-full p-5 border border-l-0 rounded-r-lg shadow-sm">
                 <h6 className="mb-2 font-semibold leading-5">Doctor said</h6>
                 <p className="text-sm text-gray-900">{response.description}</p>
               </div>
             </div>
             <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
-              <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
+              <div className="h-full p-5 border border-l-0 rounded-r-lg shadow-sm">
                 <h6 className="mb-2 font-semibold leading-5">Doctor advised you to</h6>
                 <p className="text-sm text-gray-900">
                   <li>{response.precautions[0]}</li>
@@ -400,9 +401,17 @@ const Diagnose = () => {
               </div>
             </div>
           </div>
+          <Link
+            to="/appointment"
+            className="mb-4 text-gray-900 bg-light-green-accent-400 hover:bg-light-green-accent-700 focus:outline-none font-medium rounded-lg shadow-lg text-sm w-full px-5 py-2.5 max-w-2xl text-center"
+            aria-label="Book an Appointment"
+            title="Book an Appointment"
+          >
+            Book an Appointment
+          </Link>
           <button
             onClick={() => setResponse(null)}
-            className="text-white bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:outline-none font-medium rounded-lg text-sm w-full px-5 py-2.5 max-w-2xl text-center"
+            className="text-white bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:outline-none font-medium rounded-lg shadow-lg text-sm w-full px-5 py-2.5 max-w-2xl text-center"
             aria-label="Diagnose Now"
             title="Diagnose Now"
           >

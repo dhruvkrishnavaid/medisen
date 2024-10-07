@@ -13,7 +13,7 @@ const Contact = () => {
         </div>
         <div className="grid gap-10 mx-auto lg:grid-cols-2 lg:max-w-screen-lg">
           <div className="grid sm:grid-cols-3">
-            <div className="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
+            <div className="relative w-full h-48 max-h-full rounded-lg shadow sm:h-auto">
               <img
                 className="absolute object-cover w-full h-full rounded"
                 src="public\images\Screenshot 2024-10-07 211912.png"
@@ -61,7 +61,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="grid sm:grid-cols-3">
-            <div className="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
+            <div className="relative w-full h-48 max-h-full rounded-lg shadow sm:h-auto">
               <img
                 className="absolute object-cover w-full h-full rounded"
                 src="public\images\Screenshot 2024-10-07 212420.png"
@@ -108,7 +108,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="grid sm:grid-cols-3">
-            <div className="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
+            <div className="relative w-full h-48 max-h-full rounded-lg shadow sm:h-auto">
               <img
                 className="absolute object-cover w-full h-full rounded"
                 src="public\images\Screenshot 2024-10-07 221229.png"
@@ -155,7 +155,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="grid sm:grid-cols-3">
-            <div className="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
+            <div className="relative w-full h-48 max-h-full rounded-lg shadow sm:h-auto">
               <img
                 className="absolute object-cover w-full h-full rounded"
                 src="public\images\WhatsApp Image 2024-10-07 at 22.21.00_5d56a372.jpg"
@@ -205,13 +205,13 @@ const Contact = () => {
       </div>
       <div className="text-center pb-16">
         <Link
-          to="https://github.com/dhruvkrishnavaid/medisen"
+          to="https://github.com/dhruvkrishnavaid/Medisen"
           rel="noopener noreferrer"
           target="_blank"
           aria-label="⭐ Star us on GitHub"
           className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
         >
-          ⭐ Star us on GitHub
+          ⭐ Star Medisen on GitHub
           <svg className="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
             <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
           </svg>
