@@ -8,43 +8,31 @@ const Home = () => {
           <div className="flex flex-col justify-center items-center w-full h-full">
             <div className="max-w-xl mb-6">
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                “Symptoms Unveiled: <br></br>
-                <br className="hidden md:block" />
-                AI Predicts Your Health”{" "}
-                <span className="relative px-1">
-                  <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" /> <br></br>
-                  <br></br>
-                  <span className="relative inline-block text-deep-purple-accent-400">Medisen</span>
-                </span>
+                Meet your all new AI Health Companion -
+                  <span className="relative pl-2 inline-block text-deep-purple-accent-400">Medisen</span>.
               </h2>
               <p className="text-base text-gray-700  font-semibold font-sans md:text-lg">
-                "Utilizing an advanced AI model that accurately predicts diseases based on symptoms, we aim to connect
+                Utilizing an advanced AI model that accurately predicts diseases based on symptoms, we aim to connect
                 patients virtually with the best doctors in the field. This innovative platform not only streamlines the
                 diagnostic process but also ensures that individuals receive timely and expert medical advice from the
-                comfort of their homes
+                comfort of their homes.
               </p>
             </div>
           </div>
-          <div>
+          <Link to="/diagnose">
             <img
-              className="object-contain w-full h-56 rounded shadow-lg sm:h-96"
-              src="public\images\Screenshot 2024-10-06 161838.png"
+              className="object-contain w-fit h-fit rounded-lg-lg shadow-lg"
+              src="images\banner.png"
               alt=""
             />
-          </div>
+          </Link>
         </div>
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <hr className="h-1 bg-deep-purple-100 mx-8 rounded-2xl" />
+      <br />
+      <hr className="h-1 bg-deep-purple-100 mx-8 rounded-lg-2xl" />
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <h5 className="mb-8 text-4xl font-extrabold leading-none md:pl-2">
-          Problems To be solved <br></br>
-          <br className="hidden md:block" />
-          by our model <span className="inline-block text-deep-purple-accent-400">Medisen</span>
+          Why choose <span className="inline-block text-deep-purple-accent-400">Medisen</span>?
         </h5>
         <div className="grid gap-3 row-gap-3 lg:grid-cols-3">
           <ul className="space-y-3">
@@ -148,7 +136,7 @@ const Home = () => {
                   />
                 </svg>
               </span>
-              Unleashing the feature of pre-appointments scheduling , for more convenience
+              Unleashing the feature of pre-appointments scheduling, for more convenience
             </li>
             <li className="flex items-start">
               <span className="mr-1">
@@ -181,7 +169,7 @@ const Home = () => {
           </ul>
         </div>
       </div>
-      <hr className="h-1 bg-deep-purple-100 mx-8 rounded-2xl" />
+      <hr className="h-1 bg-deep-purple-100 mx-8 rounded-lg-2xl" />
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="grid gap-8 row-gap-5 lg:grid-cols-3">
           <div className="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
@@ -189,7 +177,7 @@ const Home = () => {
             <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
             <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
             <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
-            <div className="relative p-5 bg-white rounded-sm">
+            <div className="relative p-5 bg-white rounded-lg-sm">
               <div className="flex flex-col mb-2 lg:items-center lg:flex-row">
                 <div className="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
                   <svg className="w-8 h-8 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
@@ -208,13 +196,6 @@ const Home = () => {
                 empowering communities with comprehensive health services and wellness programs tailored to their unique
                 needs
               </p>
-              <Link
-                to="/"
-                aria-label=""
-                className="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-              >
-                Learn more
-              </Link>
             </div>
           </div>
           <div className="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
@@ -222,7 +203,7 @@ const Home = () => {
             <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
             <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
             <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
-            <div className="relative p-5 bg-white rounded-sm">
+            <div className="relative p-5 bg-white rounded-lg-sm">
               <div className="flex flex-col mb-2 lg:items-center lg:flex-row">
                 <div className="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
                   <svg className="w-8 h-8 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
@@ -240,13 +221,6 @@ const Home = () => {
               <p className="mb-2 text-sm text-gray-900">
                 Seamless appointments scheduling for your convenience , ensuring easy access to healthcare services
               </p>
-              <Link
-                to="/"
-                aria-label=""
-                className="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-              >
-                Learn more
-              </Link>
             </div>
           </div>
           <div className="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
@@ -254,7 +228,7 @@ const Home = () => {
             <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
             <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
             <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
-            <div className="relative p-5 bg-white rounded-sm">
+            <div className="relative p-5 bg-white rounded-lg-sm">
               <div className="flex flex-col mb-2 lg:items-center lg:flex-row">
                 <div className="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
                   <svg className="w-8 h-8 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
@@ -273,13 +247,6 @@ const Home = () => {
                 Connect with experienced and qualified doctors for personalized healthcare solutions tailored to your
                 needs
               </p>
-              <Link
-                to="/"
-                aria-label=""
-                className="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-              >
-                Learn more
-              </Link>
             </div>
           </div>
         </div>
