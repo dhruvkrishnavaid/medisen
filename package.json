@@ -2,6 +2,7 @@
   "name": "medisen",
   "packageManager": "yarn@4.5.0",
   "type": "module",
+  "homepage": "https://dhruvkrishnavaid.github.io/Medisen",
   "workspaces": [
     "backend",
     "frontend"
