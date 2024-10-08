@@ -2,7 +2,7 @@
   "name": "medisen",
   "packageManager": "yarn@4.5.0",
   "type": "module",
-  "homepage": "https://dhruvkrishnavaid.github.io/Medisen",
+  "homepage": "https://medisen.vercel.app/",
   "workspaces": [
     "backend",
     "frontend"
