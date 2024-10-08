@@ -12,7 +12,7 @@ const Diagnose = () => {
   } | null>(null);
   const submitForm = async (data: unknown) => {
     console.log(data);
-    const res = await axios.post("http://localhost:5000/results", data);
+    const res = await axios.post("https://medisen.onrender.com/results", data);
     console.log(res);
     setResponse(res.data);
   };

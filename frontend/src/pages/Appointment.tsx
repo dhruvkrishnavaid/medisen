@@ -12,7 +12,7 @@ const Appointment = () => {
   const [response, setResponse] = useState("");
 
   const submitForm = async () => {
-    const res = await axios.post("http://localhost:5000/appointment", {
+    const res = await axios.post("https://medisen.onrender.com/appointment", {
       name: name,
       email: email,
       phone: phone,

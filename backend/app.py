@@ -20,7 +20,7 @@ app.config["MAIL_PASSWORD"] = getenv("MAIL_PASSWORD")
 app.config["MAIL_USE_TLS"] = False
 app.config["MAIL_USE_SSL"] = True
 mail = Mail(app)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": "https://medisen.vercel.app"}})
 
 desc = pd.read_csv("Description.csv")
 
