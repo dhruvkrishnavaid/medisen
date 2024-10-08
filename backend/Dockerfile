@@ -1,6 +1,10 @@
 FROM python:3.12
 WORKDIR /usr/local/backend
 
+RUN python3 -m venv .venv
+ENV VIRTUAL_ENV=/usr/local/backend/.venv
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
