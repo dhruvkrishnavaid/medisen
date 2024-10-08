@@ -1,16 +1,10 @@
-# version: '3.8'
-# services:
-#   backend:
-#     env_file:
-#       - .env
-#     build:
-#       context: ./backend
-#       dockerfile: Dockerfile
-
-#   frontend:
-#     depends_on:
-#       - backend
-#     build:
-#       context: .
-#       dockerfile: Dockerfile
-    
+version: '3.8'
+services:
+  backend:
+    env_file:
+      - .env
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
