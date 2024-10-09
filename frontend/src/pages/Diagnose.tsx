@@ -170,6 +170,7 @@ const Diagnose = () => {
 
       const suggestionsDiv = document.getElementById("suggestions" + inputId.charAt(inputId.length - 1))!;
       suggestionsDiv.innerHTML = "";
+      suggestionsDiv.style.overflowY = "scroll";
 
       suggestions.forEach((suggestion, index) => {
         const suggestionBtn = document.createElement("button");
@@ -384,7 +385,6 @@ const Diagnose = () => {
               type="text"
               id="symptom5"
               name="symptom5"
-              value={formData.symptom5}
               onChange={(e) =>
                 setFormData({
                   ...formData,
