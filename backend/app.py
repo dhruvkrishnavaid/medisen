@@ -38,7 +38,6 @@ for index, value in enumerate(
     value = " ".join([i for i in value.split("_")])
     value = value.strip()
     index_value[value] = index
-# print(len(index_value))
 prec = pd.read_csv("precaution.csv")
 
 
@@ -77,7 +76,6 @@ def prediction(arr):
     predict3 = model3.predict(input_data)
     predict_array = tuple([predict1[0], predict2[0], predict3[0]])
     final_predict = Counter(predict_array).most_common(1)[0][0]
-    print(final_predict)
     type(final_predict)
     return encoded[final_predict]
 
@@ -90,9 +88,7 @@ def predicted_value():
     symptom4: str = request.json["symptom4"]
     symptom5: str = request.json["symptom5"]
     arr = np.array([symptom1, symptom2, symptom3, symptom4, symptom5])
-    print(arr)
     pred = prediction(arr)
-    print(pred)
     data = {
         "prediction": pred,
         "description": description(pred),
