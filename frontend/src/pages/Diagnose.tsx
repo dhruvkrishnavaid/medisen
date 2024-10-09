@@ -12,17 +12,17 @@ const Diagnose = () => {
   }
   const initialFormData: FormData = { symptom1: "", symptom2: "", symptom3: "", symptom4: "", symptom5: "" };
   const [formData, setFormData] = useState(initialFormData);
-  const [submitBtn, setSubmitBtn] = useState("Get Results")
+  const [submitBtn, setSubmitBtn] = useState("Get Results");
   const [response, setResponse] = useState<{
     prediction: string;
     description: string;
     precautions: string[];
   } | null>(null);
   const submitForm = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setSubmitBtn("Submitting...")
+    e.preventDefault();
+    setSubmitBtn("Submitting...");
     const res = await axios.post("https://medisen.onrender.com/results", formData);
-    setSubmitBtn("Get Results")
+    setSubmitBtn("Get Results");
     setResponse(res.data);
   };
   useEffect(() => {
@@ -182,28 +182,28 @@ const Diagnose = () => {
         suggestionBtn.style.cursor = "pointer";
         suggestionBtn.addEventListener("click", (event) => {
           input.value = suggestion;
-            switch (inputId.charAt(inputId.length - 1)) {
-              case "1": {
-                setFormData({ ...formData, symptom1: suggestion });
-                break;
-              }
-              case "2": {
-                setFormData({ ...formData, symptom2: suggestion });
-                break;
-              }
-              case "3": {
-                setFormData({ ...formData, symptom3: suggestion });
-                break;
-              }
-              case "4": {
-                setFormData({ ...formData, symptom4: suggestion });
-                break;
-              }
-              case "5": {
-                setFormData({ ...formData, symptom5: suggestion });
-                break;
-              }
+          switch (inputId.charAt(inputId.length - 1)) {
+            case "1": {
+              setFormData({ ...formData, symptom1: suggestion });
+              break;
             }
+            case "2": {
+              setFormData({ ...formData, symptom2: suggestion });
+              break;
+            }
+            case "3": {
+              setFormData({ ...formData, symptom3: suggestion });
+              break;
+            }
+            case "4": {
+              setFormData({ ...formData, symptom4: suggestion });
+              break;
+            }
+            case "5": {
+              setFormData({ ...formData, symptom5: suggestion });
+              break;
+            }
+          }
           suggestionsDiv.style.display = "none";
           event.preventDefault();
           event.stopPropagation();
