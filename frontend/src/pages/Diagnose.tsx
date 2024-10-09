@@ -3,17 +3,26 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Diagnose = () => {
-  const initialFormData = { symptom1: "", symptom2: "", symptom3: "", symptom4: "", symptom5: "" };
+  interface FormData {
+    symptom1: string;
+    symptom2: string;
+    symptom3: string;
+    symptom4: string;
+    symptom5: string;
+  }
+  const initialFormData: FormData = { symptom1: "", symptom2: "", symptom3: "", symptom4: "", symptom5: "" };
   const [formData, setFormData] = useState(initialFormData);
+  const [submitBtn, setSubmitBtn] = useState("Get Results")
   const [response, setResponse] = useState<{
     prediction: string;
     description: string;
     precautions: string[];
   } | null>(null);
-  const submitForm = async (data: unknown) => {
-    console.log(data);
-    const res = await axios.post("https://medisen.onrender.com/results", data);
-    console.log(res);
+  const submitForm = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setSubmitBtn("Submitting...")
+    const res = await axios.post("https://medisen.onrender.com/results", formData);
+    setSubmitBtn("Get Results")
     setResponse(res.data);
   };
   useEffect(() => {
@@ -173,6 +182,28 @@ const Diagnose = () => {
         suggestionBtn.style.cursor = "pointer";
         suggestionBtn.addEventListener("click", (event) => {
           input.value = suggestion;
+            switch (inputId.charAt(inputId.length - 1)) {
+              case "1": {
+                setFormData({ ...formData, symptom1: suggestion });
+                break;
+              }
+              case "2": {
+                setFormData({ ...formData, symptom2: suggestion });
+                break;
+              }
+              case "3": {
+                setFormData({ ...formData, symptom3: suggestion });
+                break;
+              }
+              case "4": {
+                setFormData({ ...formData, symptom4: suggestion });
+                break;
+              }
+              case "5": {
+                setFormData({ ...formData, symptom5: suggestion });
+                break;
+              }
+            }
           suggestionsDiv.style.display = "none";
           event.preventDefault();
           event.stopPropagation();
@@ -180,6 +211,28 @@ const Diagnose = () => {
         suggestionBtn.addEventListener("keydown", (event) => {
           if (event.key === "Enter") {
             input.value = suggestion;
+            switch (inputId.charAt(inputId.length - 1)) {
+              case "1": {
+                setFormData({ ...formData, symptom1: suggestion });
+                break;
+              }
+              case "2": {
+                setFormData({ ...formData, symptom2: suggestion });
+                break;
+              }
+              case "3": {
+                setFormData({ ...formData, symptom3: suggestion });
+                break;
+              }
+              case "4": {
+                setFormData({ ...formData, symptom4: suggestion });
+                break;
+              }
+              case "5": {
+                setFormData({ ...formData, symptom5: suggestion });
+                break;
+              }
+            }
             suggestionsDiv.style.display = "none";
             event.preventDefault();
             event.stopPropagation();
@@ -222,11 +275,11 @@ const Diagnose = () => {
         });
       });
     };
-  }, []);
+  }, [formData]);
   switch (response) {
     case null: {
       return (
-        <form className="px-4 mx-auto my-16 max-w-xl">
+        <form onSubmit={(e) => submitForm(e)} method="POST" className="px-4 mx-auto my-16 max-w-xl">
           <div className="pb-8 text-4xl font-bold w-full text-center">Diagnose using AI</div>
           <div className="mb-5">
             <label htmlFor="symptom1" className="block mb-2 text-sm font-medium text-gray-900">
@@ -238,11 +291,8 @@ const Diagnose = () => {
               name="symptom1"
               onChange={(e) =>
                 setFormData({
+                  ...formData,
                   symptom1: e.target.value,
-                  symptom2: formData.symptom2,
-                  symptom3: formData.symptom3,
-                  symptom4: formData.symptom4,
-                  symptom5: formData.symptom5,
                 })
               }
               autoComplete="off"
@@ -265,11 +315,8 @@ const Diagnose = () => {
               name="symptom2"
               onChange={(e) =>
                 setFormData({
-                  symptom1: formData.symptom1,
+                  ...formData,
                   symptom2: e.target.value,
-                  symptom3: formData.symptom3,
-                  symptom4: formData.symptom4,
-                  symptom5: formData.symptom5,
                 })
               }
               autoComplete="off"
@@ -292,11 +339,8 @@ const Diagnose = () => {
               name="symptom3"
               onChange={(e) =>
                 setFormData({
-                  symptom1: formData.symptom1,
-                  symptom2: formData.symptom2,
+                  ...formData,
                   symptom3: e.target.value,
-                  symptom4: formData.symptom4,
-                  symptom5: formData.symptom5,
                 })
               }
               autoComplete="off"
@@ -319,11 +363,8 @@ const Diagnose = () => {
               name="symptom4"
               onChange={(e) =>
                 setFormData({
-                  symptom1: formData.symptom1,
-                  symptom2: formData.symptom2,
-                  symptom3: formData.symptom3,
+                  ...formData,
                   symptom4: e.target.value,
-                  symptom5: formData.symptom5,
                 })
               }
               autoComplete="off"
@@ -343,18 +384,16 @@ const Diagnose = () => {
               type="text"
               id="symptom5"
               name="symptom5"
+              value={formData.symptom5}
               onChange={(e) =>
                 setFormData({
-                  symptom1: formData.symptom1,
-                  symptom2: formData.symptom2,
-                  symptom3: formData.symptom3,
-                  symptom4: formData.symptom4,
+                  ...formData,
                   symptom5: e.target.value,
                 })
               }
               autoComplete="off"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:border-deep-purple-accent-400 block w-full p-2.5"
-              placeholder="Sneezing"
+              placeholder="Continuous sneezing"
             />
             <div
               id="suggestions5"
@@ -362,11 +401,11 @@ const Diagnose = () => {
             ></div>
           </div>
           <button
-            type="button"
-            onClick={() => submitForm(formData)}
-            className="text-white bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:outline-none font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center"
+            type="submit"
+            disabled={submitBtn === "Submitting..."}
+            className="text-white bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:outline-none font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center disabled:bg-deep-purple-accent-100 disabled:cursor-not-allowed"
           >
-            Get Results
+            {submitBtn}
           </button>
         </form>
       );
