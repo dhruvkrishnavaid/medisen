@@ -82,7 +82,7 @@ def prediction(arr):
     return encoded[final_predict]
 
 
-@app.route("/results", methods=["POST", "GET"])
+@app.route("/results", methods=["POST"])
 def predicted_value():
     symptom1: str = request.json["symptom1"]
     symptom2: str = request.json["symptom2"]
@@ -101,7 +101,7 @@ def predicted_value():
     return jsonify(data)
 
 
-@app.route("/appointment", methods=["POST", "GET"])
+@app.route("/appointment", methods=["POST"])
 def sendmail():
     msg = Message(
         "New Appointment",
@@ -128,6 +128,9 @@ def sendmail():
     mail.send(msg)
     return "Mail sent!"
 
+@app.route("/healthz", methods=["POST", "GET"])
+def health():
+    return "Status: OK", 200
 
 if __name__ == "__main__":
     app.run(debug=True)
