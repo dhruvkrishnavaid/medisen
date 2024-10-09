@@ -9,21 +9,7 @@ const Navbar = () => {
     <div className="sticky top-0 bg-white z-20 shadow-lg rounded-b-lg px-4 py-5 mx-auto md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="relative flex items-center justify-between">
         <Link to="/" aria-label="Medisen" title="Medisen" className="inline-flex items-center">
-          <svg
-            className="w-8 text-deep-purple-accent-400"
-            viewBox="0 0 24 24"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeMiterlimit="10"
-            stroke="currentColor"
-            fill="none"
-          >
-            <rect x="3" y="1" width="7" height="12" />
-            <rect x="3" y="17" width="7" height="6" />
-            <rect x="14" y="1" width="7" height="6" />
-            <rect x="14" y="11" width="7" height="12" />
-          </svg>
+          <img src="/images/favicon.png" alt="logo" className="w-12 h-10" />
           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Medisen</span>
         </Link>
         <ul className="items-center hidden space-x-8 lg:flex">
@@ -125,21 +111,7 @@ const Navbar = () => {
                       title="Medisen"
                       className="inline-flex items-center"
                     >
-                      <svg
-                        className="w-8 text-deep-purple-accent-400"
-                        viewBox="0 0 24 24"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeMiterlimit="10"
-                        stroke="currentColor"
-                        fill="none"
-                      >
-                        <rect x="3" y="1" width="7" height="12" />
-                        <rect x="3" y="17" width="7" height="6" />
-                        <rect x="14" y="1" width="7" height="6" />
-                        <rect x="14" y="11" width="7" height="12" />
-                      </svg>
+                      <img src="/images/favicon.png" alt="logo" className="w-12 h-10" />
                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Medisen</span>
                     </Link>
                   </div>

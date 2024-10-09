@@ -8,21 +8,7 @@ const Footer = () => {
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <div className="sm:col-span-2">
             <Link to="/" aria-label="Go home" title="Medisen" className="inline-flex items-center">
-              <svg
-                className="w-8 text-deep-purple-accent-400"
-                viewBox="0 0 24 24"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                stroke="currentColor"
-                fill="none"
-              >
-                <rect x="3" y="1" width="7" height="12" />
-                <rect x="3" y="17" width="7" height="6" />
-                <rect x="14" y="1" width="7" height="6" />
-                <rect x="14" y="11" width="7" height="12" />
-              </svg>
+              <img src="/images/favicon.png" alt="logo" className="w-12 h-10" />
               <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Medisen</span>
             </Link>
             <div className="mt-2 lg:max-w-sm">
@@ -45,12 +31,12 @@ const Footer = () => {
             <div className="flex">
               <p className="mr-1 text-gray-800">Email:</p>
               <Link
-                to="mailto:info@medisen.ai"
+                to="mailto:info@medisen.vercel.app"
                 aria-label="Our email"
                 title="Our email"
                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                info@medisen.ai
+                info@medisen.vercel.app
               </Link>
             </div>
             <div className="flex">
